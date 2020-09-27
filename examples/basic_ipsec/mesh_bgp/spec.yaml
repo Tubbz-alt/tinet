@@ -262,6 +262,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: |
       cat <<EOF >/tmp/r1_vpn2.conf
@@ -278,6 +281,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: docker cp /tmp/r1_vpn1.secrets R1:/etc/ipsec.d/vpn1.secrets
   - cmd: docker cp /tmp/r1_vpn2.secrets R1:/etc/ipsec.d/vpn2.secrets
@@ -307,6 +313,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: |
       cat <<EOF >/tmp/r2_vpn2.conf
@@ -323,6 +332,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: docker cp /tmp/r2_vpn1.secrets R2:/etc/ipsec.d/vpn1.secrets
   - cmd: docker cp /tmp/r2_vpn2.secrets R2:/etc/ipsec.d/vpn2.secrets
@@ -352,6 +364,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: |
       cat <<EOF >/tmp/r3_vpn2.conf
@@ -368,6 +383,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: docker cp /tmp/r3_vpn1.secrets R3:/etc/ipsec.d/vpn1.secrets
   - cmd: docker cp /tmp/r3_vpn2.secrets R3:/etc/ipsec.d/vpn2.secrets
@@ -397,6 +415,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: |
       cat <<EOF >/tmp/r4_vpn2.conf
@@ -413,6 +434,9 @@ postinit:
         dpddelay=10
         dpdtimeout=5
         dpdaction=restart
+        ike=aes_cbc128-sha2_256;dh19
+        phase2alg=aes_gcm128;dh19
+        remote_peer_type=cisco
       EOF
   - cmd: docker cp /tmp/r4_vpn1.secrets R4:/etc/ipsec.d/vpn1.secrets
   - cmd: docker cp /tmp/r4_vpn2.secrets R4:/etc/ipsec.d/vpn2.secrets
